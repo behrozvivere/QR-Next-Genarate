@@ -38,7 +38,7 @@
   
   "scope": "/",
   "theme_color": "#000000",
-  "background_color": "#222222",
+  "background_color": "#ffffff",
   "display": "standalone",
   "id": "qr-ng.com",
   "dir": "ltr",
