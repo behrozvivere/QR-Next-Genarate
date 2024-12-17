@@ -1,7 +1,7 @@
 {
   "name": "QRNG | AI QR Code Generator",
   "short_name": "QR NG",
-  "description": "QRNG is a cutting-edge parametric QR code generator designed to produce visually stunning, highly customizable QR codes. With advanced tools and functionalities, it caters to both web applications and print requirements, offering:\n\n• High-Quality Outputs: Download QR codes in PNG (transparent background) for digital use and SVG (vector format) for graphic design and scalable printing.\n• Customizable Styles: Choose from a variety of styles to match your brand’s identity or creative needs.\n• Limitless Applications: Ideal for branding, graphic design, marketing, and commercial printing.\n\nWhether you’re a designer, marketer, or business owner, QRNG combines beauty and functionality, ensuring QR codes that are both aesthetically pleasing and fully scannable across devices.",
+  "description": "QRNG is a cutting-edge parametric QR code generator designed to produce visually stunning, highly customizable QR codes. With advanced tools and functionalities, it caters to both web applications and print requirements. Whether you’re a designer, marketer, or business owner, QRNG combines beauty and functionality, ensuring QR codes that are both aesthetically pleasing and fully scannable.",
   "icons": [
     {
       "src": "/assets/icons/icon_192.png",
@@ -26,9 +26,16 @@
       "src": "/assets/screenshots/screenshot2.png",
       "sizes": "1280x720",
       "type": "image/png"
+    },
+    {
+      "src": "/assets/screenshots/screenshot_wide.png", 
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide"
     }
   ],
-  "start_url": "https://qr-ng.com/",
+  "start_url": "/",
+  
   "scope": "/",
   "theme_color": "#000000",
   "background_color": "#ffffff",
@@ -41,18 +48,39 @@
   "shortcuts": [
     {
       "name": "Classic Style",
-      "url": "https://www.qr-ng.com/en/style/a1",
-      "description": "Access classic QR code styles"
+      "url": "/en/style/a1",
+      "description": "Access classic QR code styles",
+      "icons": [
+        {
+          "src": "/assets/icons/shortcut-a1.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        }
+      ]
     },
     {
       "name": "Pixel Dots Matrix",
-      "url": "https://www.qr-ng.com/en/style/c2",
-      "description": "Pixel dots matrix Style"
+      "url": "/en/style/c2",
+      "description": "Pixel dots matrix Style",
+      "icons": [
+        {
+          "src": "/assets/icons/shortcut-c2.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        }
+      ]
     },
     {
       "name": "Generative AI Codes",
-      "url": "https://www.qr-ng.com/en/style/g1",
-      "description": "Explore AI-generated QR code designs"
+      "url": "/en/style/g1",
+      "description": "Explore AI-generated QR code designs",
+      "icons": [
+        {
+          "src": "/assets/icons/shortcut-g1.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        }
+      ]
     }
   ],
   "categories": [
@@ -67,5 +95,8 @@
   "launch_handler": {
     "route_to": "existing-client",
     "navigate_existing_client": "if_not_open"
-  }
+   
+  },
+  "iarc_rating_id": "IARC123456"
+  
 }
