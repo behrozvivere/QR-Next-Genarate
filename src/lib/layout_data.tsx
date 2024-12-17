@@ -11,7 +11,7 @@ export async function generateMetadata({
   const t = await getTranslations({ locale, namespace: "metadata" });
 
   return {
-    metadataBase: new URL("https://qrbtf.com"),
+    metadataBase: new URL("https://qr-ng.com"),
     title: {
       template: t("title.template"),
       default: t("title.default"),

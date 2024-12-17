@@ -1,7 +1,7 @@
 import { MetadataRoute } from "next";
 import { locales } from "@/navigation";
 
-const baseUrl = "https://qrbtf.com";
+const baseUrl = "https://qr-ng.com";
 
 interface Site {
   url: string;
