@@ -23,14 +23,13 @@ export const http: typeof fetch = async (input, init) => {
       const res = await fetch(input, init);
 
       if (!res.ok) {
-        // خطای مهم برای وضعیت‌های 4xx و 5xx
         if (res.status >= 500) {
           console.error(`Server Error: ${res.status}`);
         } else {
           console.warn(`Client Error: ${res.status}`);
         }
 
-        // اگر خطا غیر بحرانی باشد، نوتیفیکیشن نمایش داده نمی‌شود
+        // خطای غیر بحرانی 4xx
         if (res.status >= 400 && res.status < 500) {
           throw new Error("Request failed but no user notification needed.");
         }
@@ -41,18 +40,19 @@ export const http: typeof fetch = async (input, init) => {
       return res; // پاسخ موفق
     } catch (error) {
       retries++;
-      console.error(`Attempt ${retries} failed:`, error.message);
+      console.error(`Attempt ${retries} failed:`, error instanceof Error ? error.message : error);
 
       if (retries > MAX_RETRIES) {
-        // خطای نهایی فقط در صورت شکست همه تلاش‌ها
         const msg = error instanceof Error ? error.message : "Network Error";
-        toast.error("مشکلی پیش آمد، لطفاً بعداً تلاش کنید.", {
-          description: res?.statusText || msg,
+        toast.error("Something went wrong, please try again later", {
+          description: msg,
         });
         throw error;
       }
     }
   }
+
+  throw new Error("Unexpected HTTP request failure.");
 };
 
 
