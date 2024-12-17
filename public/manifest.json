@@ -63,5 +63,9 @@
   ],
   "edge_side_panel": {
     "preferred_width": 320
+  },
+  "launch_handler": {
+    "route_to": "existing-client",
+    "navigate_existing_client": "if_not_open"
   }
 }
