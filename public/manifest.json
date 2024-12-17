@@ -1,18 +1,44 @@
 {
-  "name": "QR NG",
+  "name": "QRNG | AI QR Code Generator",
   "short_name": "QR NG",
-  "description": "Beautiful QR Code Generator",
+  "description": "QRNG is a cutting-edge parametric QR code generator designed to produce visually stunning, highly customizable QR codes. With advanced tools and functionalities, it caters to both web applications and print requirements, offering:\n\n•High-Quality Outputs: Download QR codes in PNG (transparent background) for digital use and SVG (vector format) for graphic design and scalable printing.\n•Customizable Styles: Choose from a variety of styles to match your brand’s identity or creative needs.\n•Limitless Applications: Ideal for branding, graphic design, marketing, and commercial printing.\n\nWhether you’re a designer, marketer, or business owner, QRNG combines beauty and functionality, ensuring QR codes that are both aesthetically pleasing and fully scannable across devices.",
   "icons": [
     {
       "src": "/favicon.svg",
-      "sizes": "512x512",
+      "sizes": "any",
       "type": "image/svg+xml",
       "purpose": "any maskable"
     }
   ],
-  "start_url": "/",
+  "start_url": "https://qr-ng.com/",
   "scope": "/",
   "theme_color": "#000000",
   "background_color": "#ffffff",
-  "display": "standalone"
+  "display": "standalone",
+  "id": "qr-ng.com",
+  "dir": "ltr",
+  "lang": "en",
+  "orientation": "portrait",
+  "prefer_related_applications": false,
+  "shortcuts": [
+    {
+      "name": "Classic Style",
+      "url": "https://www.qr-ng.com/en/style/a1",
+      "description": ""
+    },
+    {
+      "name": "Pixel Dots Matrix",
+      "url": "https://www.qr-ng.com/en/style/c2",
+      "description": "Pixel dots matrix Style"
+    }
+  ],
+  "categories": [
+    "business",
+    "personalization",
+    "productivity",
+    "utilities"
+  ],
+  "edge_side_panel": {
+    "preferred_width": 0
+  }
 }
