@@ -1,13 +1,31 @@
 {
   "name": "QRNG | AI QR Code Generator",
   "short_name": "QR NG",
-  "description": "QRNG is a cutting-edge parametric QR code generator designed to produce visually stunning, highly customizable QR codes. With advanced tools and functionalities, it caters to both web applications and print requirements, offering:\n\n•High-Quality Outputs: Download QR codes in PNG (transparent background) for digital use and SVG (vector format) for graphic design and scalable printing.\n•Customizable Styles: Choose from a variety of styles to match your brand’s identity or creative needs.\n•Limitless Applications: Ideal for branding, graphic design, marketing, and commercial printing.\n\nWhether you’re a designer, marketer, or business owner, QRNG combines beauty and functionality, ensuring QR codes that are both aesthetically pleasing and fully scannable across devices.",
+  "description": "QRNG is a cutting-edge parametric QR code generator designed to produce visually stunning, highly customizable QR codes. With advanced tools and functionalities, it caters to both web applications and print requirements, offering:\n\n• High-Quality Outputs: Download QR codes in PNG (transparent background) for digital use and SVG (vector format) for graphic design and scalable printing.\n• Customizable Styles: Choose from a variety of styles to match your brand’s identity or creative needs.\n• Limitless Applications: Ideal for branding, graphic design, marketing, and commercial printing.\n\nWhether you’re a designer, marketer, or business owner, QRNG combines beauty and functionality, ensuring QR codes that are both aesthetically pleasing and fully scannable across devices.",
   "icons": [
     {
-      "src": "/favicon.svg",
-      "sizes": "any",
-      "type": "image/svg+xml",
-      "purpose": "any maskable"
+      "src": "/assets/icons/icon_192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/icons/icon_512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/assets/screenshots/screenshot1.png",
+      "sizes": "1280x720",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/screenshots/screenshot2.png",
+      "sizes": "1280x720",
+      "type": "image/png"
     }
   ],
   "start_url": "https://qr-ng.com/",
@@ -24,12 +42,17 @@
     {
       "name": "Classic Style",
       "url": "https://www.qr-ng.com/en/style/a1",
-      "description": ""
+      "description": "Access classic QR code styles"
     },
     {
       "name": "Pixel Dots Matrix",
       "url": "https://www.qr-ng.com/en/style/c2",
       "description": "Pixel dots matrix Style"
+    },
+    {
+      "name": "Generative AI Codes",
+      "url": "https://www.qr-ng.com/en/style/g1",
+      "description": "Explore AI-generated QR code designs"
     }
   ],
   "categories": [
@@ -39,6 +62,6 @@
     "utilities"
   ],
   "edge_side_panel": {
-    "preferred_width": 0
+    "preferred_width": 320
   }
 }
