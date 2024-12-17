@@ -1,7 +1,7 @@
 {
   "name": "QRNG | AI QR Code Generator",
   "short_name": "QR NG",
-  "description": "QRNG is an advanced parametric QR code generator creating visually stunning, customizable, and fully scannable codes for web and print—perfect for designers, marketers, and businesses.",
+  "description": "QRNG is an advanced parametric QR code generator ",
   "icons": [
     {
       "src": "/assets/icons/icon_192.png",
