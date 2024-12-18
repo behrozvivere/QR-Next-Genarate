@@ -1,5 +1,8 @@
 [{
   "relation": ["delegate_permission/common.handle_all_urls"],
-  "target" : { "namespace": "android_app", "package_name": "com.qr_ng.twa",
-               "sha256_cert_fingerprints": ["88:5D:D6:C0:27:A4:69:EE:4F:E4:F5:4E:D6:DF:BD:72:2F:B2:C5:64:AD:6B:8A:6D:C9:76:1E:BF:54:B0:2F:57"] }
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.qr_ng.twa",
+    "sha256_cert_fingerprints": ["51:39:00:D2:AE:0B:61:47:9B:34:B9:DF:F0:9D:4E:9E:68:23:87:20:03:80:F8:9F:DF:B3:E7:4E:01:6A:3D:74"]
+  }
 }]
