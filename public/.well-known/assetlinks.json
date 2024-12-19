@@ -1,8 +1,9 @@
 [{
-  "relation": ["delegate_permission/common.handle_all_urls"],
-  "target": {
-    "namespace": "android_app",
-    "package_name": "com.qr_ng.twa",
-    "sha256_cert_fingerprints": ["22:33:E5:AA:A9:69:E3:20:81:0F:2D:BD:90:CD:6C:00:A9:FB:CA:15:2D:01:D8:1C:5E:3F:2D:48:76:22:DC:61"]
-  }
+  "relation": ["delegate_permission/common.get_login_creds"],
+  "target" : { "namespace": "android_app", "package_name": "com.qr_ng.twa",
+               "sha256_cert_fingerprints": ["22:33:E5:AA:A9:69:E3:20:81:0F:2D:BD:90:CD:6C:00:A9:FB:CA:15:2D:01:D8:1C:5E:3F:2D:48:76:22:DC:61"] }
+},
+{
+  "relation": ["delegate_permission/common.get_login_creds"],
+  "target" : { "namespace": "web", "site": "https://qr-ng.com" }
 }]
