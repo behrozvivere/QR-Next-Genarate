@@ -1,9 +1,17 @@
 [{
-  "relation": ["delegate_permission/common.get_login_creds"],
-  "target" : { "namespace": "android_app", "package_name": "com.qr_ng.twa",
-               "sha256_cert_fingerprints": ["51:39:00:D2:AE:0B:61:47:9B:34:B9:DF:F0:9D:4E:9E:68:23:87:20:03:80:F8:9F:DF:B3:E7:4E:01:6A:3D:74"] }
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.qr_ng.twa",
+    "sha256_cert_fingerprints": ["51:39:00:D2:AE:0B:61:47:9B:34:B9:DF:F0:9D:4E:9E:68:23:87:20:03:80:F8:9F:DF:B3:E7:4E:01:6A:3D:74"]
+  }
 },
 {
-  "relation": ["delegate_permission/common.get_login_creds"],
-  "target" : { "namespace": "web", "site": "https://qr-ng.com" }
-}]
+    "relation": [
+      "check_validation"
+    ],
+    "target": {
+      "namespace": "cafebazaar_twa",
+      "package_name": "com.qr_ng.twa"
+    }
+  }]
